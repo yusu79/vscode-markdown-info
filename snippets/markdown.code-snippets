@@ -1,0 +1,24 @@
+{
+    "Create Admonition Box (Qiita-style)": {
+        "prefix": ":::note",
+        "body": [
+			":::note ${1|info,warn,alert,question|} ${2:Enter the title here}",
+			"",
+			":::"
+		],
+		"description":[
+			"Creates a Info box by Qiita-style. Choose from info, warning, alert or question types."
+		]
+    },
+    "Create Admonition Box (Zenn-style)": {
+        "prefix": ":::message",
+        "body": [
+			":::message ${1|info,warn,alert,question|} ${2:Enter the title here}",
+			"",
+			":::"
+		],
+		"description":[
+			"Creates a Info box by Zenn-style. Choose from info, warning, alert or question types."
+		]
+    },
+}

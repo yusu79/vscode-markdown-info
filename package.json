@@ -1,0 +1,92 @@
+{
+  "name": "vscode-markdown-info",
+  "displayName": "Markdown Info",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "publisher": "yusu79",
+  "author": {
+    "name": "yusu79",
+    "email": "oss@yusu79.com",
+    "url": "https://github.com/yusu79"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yusu79/vscode-markdown-info"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/yusu79"
+  },
+  "icon": "images/icon.png",
+  "private": true,
+  "keywords": [
+    "markdown"
+  ],
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "markdown.markdownItPlugins": true,
+    "markdown.previewStyles": [
+      "styles/default-styles.css",
+      "styles/qiita-styles.css",
+      "styles/zenn-styles.css"
+    ],
+    "snippets": [
+      {
+        "language": "markdown",
+        "path": "./snippets/markdown.code-snippets"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Markdown Info Configuration",
+      "properties": {
+        "markdown-info.markdown-it-info.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "%markdown-info.markdown-it-info.enable%"
+        },
+        "markdown-info.markdown-it-info.previewStyles": {
+          "type": "string",
+          "enum": [
+            "default",
+            "qiita",
+            "zenn"
+          ],
+          "default": "default",
+          "description": "%markdown-info.markdown-it-info.previewStyles%"
+        },
+        "markdown-info.markdown-it-info.defaultTitle": {
+          "type": "string",
+          "default": "%markdown-info.markdown-it-info.defaultTitle.default%",
+          "description": "%markdown-info.markdown-it-info.defaultTitle%"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.96.0",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "markdown-it-info": "^1.0.2"
+  }
+}

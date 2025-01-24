@@ -26,7 +26,7 @@
 VScodeのマーケットプレイスで「**Markdown Info**」と入力してください｡
 
 <p align="center">
-<img src="./images/setup-jp.png" width="70%"/>
+<img src="./images/setup.png"/>
 </p>
 
 ## 使い方

@@ -1,5 +1,4 @@
 {
-    "extension.description": "The extension that enhances Markdown editing by enabling the creation of Qiita and Zenn-style admonition boxes.",
     "markdown-info.previewStyles": "Select a stylesheet. Available options are as follows:\n\n• default: Uses the default stylesheet.\n• qiita: Applies a Qiita-like stylesheet.\n• zenn: Applies a Zenn-like stylesheet.",
     "markdown-info.defaultTitle": "Sets the default title for boxes. This will be used when no title is specified.",
     "markdown-info.defaultTitle.default": "Enter the title here"

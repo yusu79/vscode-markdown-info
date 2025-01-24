@@ -1,5 +1,4 @@
 {
-    "extension.description": "QiitaやZennスタイルのinfoボックスをMarkdown文書に簡単に追加できる拡張機能です。",
     "markdown-info.previewStyles": "スタイルシートを選択してください。利用可能なオプションは以下の通りです:\n\n・ default:\tデフォルトのスタイルシートを使用します。\n・ qiita:\tQiita風のスタイルシートを適用します。\n・ zenn:\tZenn風のスタイルシートを適用します。",
     "markdown-info.defaultTitle": "ボックスのデフォルトタイトルを設定します。タイトルが指定されていない場合に使用されます。",
     "markdown-info.defaultTitle.default": "ここにタイトルを記述してください"

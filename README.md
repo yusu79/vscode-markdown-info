@@ -4,108 +4,115 @@
 ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/yusu79.vscode-markdown-info)
 ![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/yusu79.vscode-markdown-info)
 
-[日本語版の「README」はこちら](https://github.com/yusu79/vscode-markdown-info/blob/main/README.ja.md)
+[Here is the English version of the "README"](https://github.com/yusu79/vscode-markdown-info/blob/main/README.en.md)
 
-**VSCode Markdown Info** is a Visual Studio Code extension that allows you to easily create “adomonition box” within your Markdown documents.
+**VSCode Markdown Info**は、Markdown文書内で簡単に「Infoボックス」を作成できるVisual Studio Codeの拡張機能です。
 
-Using this extension, you can easily add [Qiita](https://qiita.com/) or [Zenn](https://zenn.dev/) style adomonition box to visually highlight important information.
+この拡張機能を使用することで、[Qiita](https://qiita.com/)や[Zenn](https://zenn.dev/)スタイルの情報ボックスを手軽に追加し、重要な情報を視覚的に強調することができます。
 
-![](./images/markdown-info.png)
+![](./images/markdown-info-jp.png)
 
 <!-- omit in toc -->
-## TOC
-- [Setup](#setup)
-- [Quick usage](#quick-usage)
-- [Usage](#usage)
-- [Features](#features)
-- [Configuration](#configuration)
-- [Used Plugins](#used-plugins)
-- [Acknowledgments](#acknowledgments)
+## 目次
+- [インストール](#インストール)
+- [使い方](#使い方)
+- [解説](#解説)
+- [特徴と注意点](#特徴と注意点)
+- [設定](#設定)
+- [使用しているプラグイン](#使用しているプラグイン)
+- [謝辞](#謝辞)
 
-## Setup
-Enter “**Markdown Info**” in the VScode marketplace.
+## インストール
+VScodeのマーケットプレイスで「**Markdown Info**」と入力してください｡
 
 <p align="center">
-<img src="./images/setup.png" width="70%"/>
+<img src="./images/setup-jp.png" width="70%"/>
 </p>
 
-## Quick usage
-| Format | Markdown | 
+## 使い方
+| 形式      | Markdown                     | 
 | ------------- | ---------------------------- | 
-| Qiita Format | `:::note Type Title` |
-| Zenn Format | `::message Type Title` | 
-
-Qiita Format:
-
-![](./images/qiita-snippet.gif)
+| Qiita形式 | `:::note タイプ タイトル`    | 
+| Zenn形式  | `:::message タイプ タイトル` | 
 
 
-Zenn Format:
+Qiita形式:
 
-![](./images/zenn-snippet.gif)
+![](./images/qiita-snippet-jp.gif)
 
 
-## Usage
-This is an extension that allows you to create “adomonition boxes” in Qiita or Zenn format on VSCode.
+Zenn形式:
 
-The adomonition box is created in the following format:
+
+![](./images/zenn-snippet-jp.gif)
+
+
+
+
+
+## 解説
+VSCode上でQiitaやZenn形式の「Infoボックス」を作成できる拡張機能です。
+
+Infoボックスは以下の形式で作成します：
 
 ```markdown
-:::note Type Title
-content
+:::note タイプ タイトル
+内容
 :::
 ```
 
-or
+または
 
 ```markdown
-:::message type Title
-Content
+:::message タイプ タイトル
+内容
 :::
 ```
 
-There are four types of Info boxes
+Infoボックスには4種類のタイプがあります：
 
-1. info (default): general information
-2. warn: warning
-3. alert: strong warning
-4. question: question or doubt
+1. info（デフォルト）：一般的な情報
+2. warn：警告
+3. alert：強い警告
+4. question：質問や疑問
 
-## Features
-- The default type is “info”; note that this differs from Zenn's original specification.
-- The title is written immediately after the type. This is different from the original specification of Qiita.
-- The adomonition box also supports nested structure, so complex information can be displayed in an organized manner.
+## 特徴と注意点
 
-## Configuration
+- デフォルトのタイプは「info」です。Zennの元の仕様とは異なるので注意が必要です。
+- タイトルはタイプの直後に記述します。これはQiitaの元の仕様とは異なる点です。
+- Infoボックスは入れ子構造にも対応しているため、複雑な情報を整理して表示することができます。
+
+
+
+## 設定
+
 ### Default Title
-You can set a default value that will be reflected if no title is specified.
-The default value is “**Please write the title here**”.
+タイトルが指定されていない場合に反映されるデフォルト値を設定できます。
+初期状態では「**ここにタイトルを記述してください**」が設定されています。
+
+![](./images/default-title-jp.png)
 
 
-![](./images/default-title.png)
 
 ### Preview Styles
-You can select the CSS stylesheet that will be reflected in the Markdown preview screen. 
+Markdownのプレビュー画面に反映されるCSSのスタイルシートを選択できます。利用可能なオプションは以下の通りです:
 
-The available options are as follows:
+default: デフォルトのスタイルシートを使用します。
 
+![](./images/default-style-jp.png)
 
-default: Use the default style sheet.
+qiita: Qiita風のスタイルシートを適用します。
 
-![](./images/default-style.png)
+![](./images/qiita-style-jp.png)
 
-qiita: Apply Qiita-style stylesheet.
+zenn: Zenn風のスタイルシートを適用します。
 
-![](./images/qiita-style.png)
+![](./images/zenn-style-jp.png)
 
-zenn: Apply Zenn-style stylesheet.
-
-![](./images/zenn-style.png)
-
-## Used Plugins
+## 使用しているプラグイン
 - [yusu79/markdown-it-info](https://github.com/yusu79/markdown-it-info)
 
-## Acknowledgments
-In developing this project, we referenced the following open source software. We would like to express our gratitude:
+## 謝辞
+このプロジェクトの開発にあたり、以下のオープンソースソフトウェアを参考にさせていただきました。この場を借りて感謝の意を表します。
 
 - [qjebbs/vscode-markdown-extended](https://github.com/qjebbs/vscode-markdown-extended)

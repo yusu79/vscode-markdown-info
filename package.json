@@ -1,7 +1,7 @@
 {
   "name": "vscode-markdown-info",
   "displayName": "Markdown Info",
-  "description": "%extension.description%",
+  "description": "QiitaやZennスタイルのinfoボックスをMarkdownで簡単に作成できる拡張機能です。",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.96.0"
@@ -33,7 +33,6 @@
   ],
   "main": "./extension.js",
   "l10n": "./l10n",
-  "readme": "README.md",
   "contributes": {
     "markdown.markdownItPlugins": true,
     "markdown.previewStyles": [

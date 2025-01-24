@@ -1,9 +1,6 @@
 {
-    "reload.message": "You need to reload VSCode to apply the settings. Do you want to reload?",
-    "reload.yes": "Yes",
-    "reload.no": "No",
-    "markdown-info.markdown-it-info.enable": "Specifies whether to enable the markdown-it-info plugin. When checked, the plugin is enabled; when unchecked, it is disabled.\n\nmarkdown-it-info is a markdown-it plugin that allows easy addition of information boxes and admonition boxes in Markdown documents. This plugin enables you to visually emphasize important information and improve document readability.",
-    "markdown-info.markdown-it-info.previewStyles": "Select a stylesheet. Available options are as follows:\n\n• default: Uses the default stylesheet.\n• qiita: Applies a Qiita-like stylesheet.\n• zenn: Applies a Zenn-like stylesheet.",
-    "markdown-info.markdown-it-info.defaultTitle": "Sets the default title for boxes. This will be used when no title is specified.",
-    "markdown-info.markdown-it-info.defaultTitle.default": "Enter the title here"
+    "extension.description": "The extension that enhances Markdown editing by enabling the creation of Qiita and Zenn-style admonition boxes.",
+    "markdown-info.previewStyles": "Select a stylesheet. Available options are as follows:\n\n• default: Uses the default stylesheet.\n• qiita: Applies a Qiita-like stylesheet.\n• zenn: Applies a Zenn-like stylesheet.",
+    "markdown-info.defaultTitle": "Sets the default title for boxes. This will be used when no title is specified.",
+    "markdown-info.defaultTitle.default": "Enter the title here"
 }

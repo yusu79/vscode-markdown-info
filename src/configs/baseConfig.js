@@ -1,7 +1,4 @@
-const 
-    vscode = require("vscode"),
-    localeEn = require("../../package.nls.json"),
-    localeJa = require("../../package.nls.ja.json");
+const vscode = require("vscode");
 
 class BaseConfig extends vscode.Disposable {
     constructor(extension) {
@@ -11,20 +8,12 @@ class BaseConfig extends vscode.Disposable {
         this.getWorkspaceConf(extension);
         this._disposable = vscode.workspace.onDidChangeConfiguration(async(e) => {
             if (e.affectsConfiguration(this._extensionName)) {
-                const 
-                    localeTableKey = vscode.env.language,
-                    localeTable = Object.assign(
-                        {}, // 空のオブジェクトで、これがコピー先となる
-                        localeEn, // 英語のローカライズデータを含むオブジェクト
-                        {ja: localeJa}[localeTableKey] || {} // localeTableKey が 'ja' の場合に localeJa オブジェクトを返し、それ以外の場合は空のオブジェクト {} を返す
-                    );
-                
                 const answer = await vscode.window.showInformationMessage(
-                    localeTable["reload.message"],
-                    localeTable["reload.yes"],
-                    localeTable["reload.no"]
+                    vscode.l10n.t("You need to reload VSCode to apply the settings.\nDo you want to reload?"),
+                    vscode.l10n.t("Yes"),
+                    vscode.l10n.t("No")
                 );
-                if (answer === localeTable["reload.yes"]) {
+                if (answer === vscode.l10n.t("Yes")) {
                     await vscode.commands.executeCommand('workbench.action.reloadWindow');
                 }
             }

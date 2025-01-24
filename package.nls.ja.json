@@ -1,9 +1,6 @@
 {
-    "reload.message": "設定を反映するにはVSCodeをリロードする必要があります。リロードしますか？",
-    "reload.yes": "はい",
-    "reload.no": "いいえ",
-    "markdown-info.markdown-it-info.enable": "markdown-it-infoプラグインを有効にするかどうかを指定します。チェックするとプラグインが有効になり、チェックを外すと無効になります。\n\nmarkdown-it-info は、Markdown 文書内に情報ボックスや注意喚起ボックスを簡単に追加できる markdown-it プラグインです。このプラグインを使用すると、重要な情報を視覚的に強調し、文書の可読性を向上させることができます。",
-    "markdown-info.markdown-it-info.previewStyles": "スタイルシートを選択してください。利用可能なオプションは以下の通りです:\n\n・ default:\tデフォルトのスタイルシートを使用します。\n・ qiita:\tQiita風のスタイルシートを適用します。\n・ zenn:\tZenn風のスタイルシートを適用します。",
-    "markdown-info.markdown-it-info.defaultTitle": "ボックスのデフォルトタイトルを設定します。タイトルが指定されていない場合に使用されます。",
-    "markdown-info.markdown-it-info.defaultTitle.default": "ここにタイトルを記述してください"
+    "extension.description": "QiitaやZennスタイルのinfoボックスをMarkdown文書に簡単に追加できる拡張機能です。",
+    "markdown-info.previewStyles": "スタイルシートを選択してください。利用可能なオプションは以下の通りです:\n\n・ default:\tデフォルトのスタイルシートを使用します。\n・ qiita:\tQiita風のスタイルシートを適用します。\n・ zenn:\tZenn風のスタイルシートを適用します。",
+    "markdown-info.defaultTitle": "ボックスのデフォルトタイトルを設定します。タイトルが指定されていない場合に使用されます。",
+    "markdown-info.defaultTitle.default": "ここにタイトルを記述してください"
 }

@@ -17,6 +17,7 @@ Using this extension, you can easily add [Qiita](https://qiita.com/) or [Zenn](h
 - [Usage](#usage)
 - [Features](#features)
 - [Configuration](#configuration)
+- [Credits](#credits)
 - [Used Plugins](#used-plugins)
 - [Acknowledgments](#acknowledgments)
 
@@ -99,6 +100,15 @@ qiita: Apply Qiita-style stylesheet.
 zenn: Apply Zenn-style stylesheet.
 
 ![](./images/zenn-style.png)
+
+## Credits
+The icon displayed in the VScode extension is a combination of these two images:
+
+| Image | License | Author/Site |
+|-------|---------|-------------|
+| [Free Markdown Icon](https://iconscout.com/free-icon/markdown-1)  | [MIT License](https://opensource.org/license/MIT) | [Benjamin J sperry](https://iconscout.com/contributors/benjamin-j-sperry) / [IconScout](https://iconscout.com/) |
+| [info icon](https://fonts.google.com/icons?selected=Material+Symbols+Outlined:info:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=info&icon.size=24&icon.color=%232a6200) | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [Material Symbols & Icons - Google Fonts](https://fonts.google.com/icons) |
+
 
 ## Used Plugins
 - [yusu79/markdown-it-info](https://github.com/yusu79/markdown-it-info)

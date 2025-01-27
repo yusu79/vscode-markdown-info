@@ -19,6 +19,7 @@
 - [解説](#解説)
 - [特徴と注意点](#特徴と注意点)
 - [設定](#設定)
+- [クレジット](#クレジット)
 - [使用しているプラグイン](#使用しているプラグイン)
 - [謝辞](#謝辞)
 
@@ -108,6 +109,17 @@ qiita: Qiita風のスタイルシートを適用します。
 zenn: Zenn風のスタイルシートを適用します。
 
 ![](./images/zenn-style-jp.png)
+
+
+## クレジット
+VScode拡張機能で表示されるアイコンは、以下の2つの画像を組み合わせたものです。
+
+
+| 画像                                                                                                                                                                                          | ライセンス                                                      | 作者/サイト                                                                                                     | 
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | 
+| [Free Markdown Icon](https://iconscout.com/free-icon/markdown-1)                                                                                                                                  | [MIT ライセンス](https://opensource.org/license/MIT)            | [Benjamin J sperry](https://iconscout.com/contributors/benjamin-j-sperry) / [IconScout](https://iconscout.com/) | 
+| [infoアイコン](https://fonts.google.com/icons?selected=Material+Symbols+Outlined:info:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=info&icon.size=24&icon.color=%232a6200) | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [Material Symbols & Icons - Google Fonts](https://fonts.google.com/icons)                                                                         | 
+
 
 ## 使用しているプラグイン
 - [yusu79/markdown-it-info](https://github.com/yusu79/markdown-it-info)

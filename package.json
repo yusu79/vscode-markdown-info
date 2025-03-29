@@ -2,7 +2,7 @@
   "name": "vscode-markdown-info",
   "displayName": "Markdown Info",
   "description": "QiitaやZennスタイルのinfoボックスをMarkdownで簡単に作成できる拡張機能です。",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -46,44 +46,46 @@
         "path": "./snippets/markdown.code-snippets"
       }
     ],
-    "grammars": [{
-      "language": "markdown",
-      "scopeName": "source.markdown",
-      "path": "./syntaxes/vscode-markdown-info.tmLanguage.json"
-    }],
+    "grammars": [
+      {
+        "language": "markdown",
+        "scopeName": "source.markdown",
+        "path": "./syntaxes/vscode-markdown-info.tmLanguage.json"
+      }
+    ],
     "configurationDefaults": {
-        "editor.tokenColorCustomizations": {
-          "textMateRules": [
-            {
-              "scope": "markdown-info.info.markdown",
-              "settings": {
-                "foreground": "#66ca1b",
-                "fontStyle": "italic"
-              }
-            },
-            {
-              "scope": "markdown-info.warn.markdown",
-              "settings": {
-                "foreground": "#ffb94d",
-                "fontStyle": "italic"
-              }
-            },
-            {
-              "scope": "markdown-info.alert.markdown",
-              "settings": {
-                "foreground": "#ff7670",
-                "fontStyle": "italic"
-              }
-            },
-            {
-              "scope": "markdown-info.question.markdown",
-              "settings": {
-                "foreground": "#adcefe",
-                "fontStyle": "italic"
-              }
+      "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": "markdown-info.info.markdown",
+            "settings": {
+              "foreground": "#66ca1b",
+              "fontStyle": "italic"
             }
-          ]
-        }
+          },
+          {
+            "scope": "markdown-info.warn.markdown",
+            "settings": {
+              "foreground": "#ffb94d",
+              "fontStyle": "italic"
+            }
+          },
+          {
+            "scope": "markdown-info.alert.markdown",
+            "settings": {
+              "foreground": "#ff7670",
+              "fontStyle": "italic"
+            }
+          },
+          {
+            "scope": "markdown-info.question.markdown",
+            "settings": {
+              "foreground": "#adcefe",
+              "fontStyle": "italic"
+            }
+          }
+        ]
+      }
     },
     "configuration": {
       "type": "object",

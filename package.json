@@ -46,9 +46,48 @@
         "path": "./snippets/markdown.code-snippets"
       }
     ],
+    "grammars": [{
+      "language": "markdown",
+      "scopeName": "source.markdown",
+      "path": "./syntaxes/vscode-markdown-info.tmLanguage.json"
+    }],
+    "configurationDefaults": {
+        "editor.tokenColorCustomizations": {
+          "textMateRules": [
+            {
+              "scope": "markdown-info.info.markdown",
+              "settings": {
+                "foreground": "#66ca1b",
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "scope": "markdown-info.warn.markdown",
+              "settings": {
+                "foreground": "#ffb94d",
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "scope": "markdown-info.alert.markdown",
+              "settings": {
+                "foreground": "#ff7670",
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "scope": "markdown-info.question.markdown",
+              "settings": {
+                "foreground": "#adcefe",
+                "fontStyle": "italic"
+              }
+            }
+          ]
+        }
+    },
     "configuration": {
       "type": "object",
-      "title": "Markdown Info Configuration",
+      "title": "Markdown Info",
       "properties": {
         "markdown-info.previewStyles": {
           "type": "string",

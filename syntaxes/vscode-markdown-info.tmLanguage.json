@@ -1,0 +1,54 @@
+{
+    "name": "Markdown Info",
+    "scopeName": "source.markdown",
+    "patterns": [
+        { "include": "#markdown-info-admonition"},
+        { "include": "text.html.markdown" }
+	],
+	"repository": {
+        "markdown-info-admonition": {
+            "patterns": [
+                {
+                    "name": "markdown-info.info.markdown",
+                    "begin": "^:::(note|message) info",
+                    "end": "^:::$",
+                    "patterns": [
+                        {
+                            "include": "$self"
+                        }
+                    ]
+                },
+                {
+                    "name": "markdown-info.warn.markdown",
+                    "begin": "^:::(note|message) warn",
+                    "end": "^:::$",
+                    "patterns": [
+                        {
+                            "include": "$self"
+                        }
+                    ]
+                },
+                {
+                    "name": "markdown-info.alert.markdown",
+                    "begin": "^:::(note|message) alert",
+                    "end": "^:::$",
+                    "patterns": [
+                        {
+                            "include": "$self"
+                        }
+                    ]
+                },
+                {
+                    "name": "markdown-info.question.markdown",
+                    "begin": "^:::(note|message) question",
+                    "end": "^:::$",
+                    "patterns": [
+                        {
+                            "include": "$self"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

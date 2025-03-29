@@ -25,7 +25,7 @@ Using this extension, you can easily add [Qiita](https://qiita.com/) or [Zenn](h
 Enter “**Markdown Info**” in the VScode marketplace.
 
 <p align="center">
-<img src="./images/setup.png"/>
+<img src="images/setup.png" width="70%"/>
 </p>
 
 ## Quick usage

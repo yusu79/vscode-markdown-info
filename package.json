@@ -46,13 +46,6 @@
         "path": "./snippets/markdown.code-snippets"
       }
     ],
-    "grammars": [
-      {
-        "language": "markdown",
-        "scopeName": "source.markdown",
-        "path": "./syntaxes/vscode-markdown-info.tmLanguage.json"
-      }
-    ],
     "configurationDefaults": {
       "editor.tokenColorCustomizations": {
         "textMateRules": [

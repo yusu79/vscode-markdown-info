@@ -1,8 +1,5 @@
 # Markdown Info
 ![GitHub License](https://img.shields.io/github/license/yusu79/vscode-markdown-info)
-![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/yusu79.vscode-markdown-info)
-![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/yusu79.vscode-markdown-info)
-![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/yusu79.vscode-markdown-info)
 
 **VSCode Markdown Info** is a Visual Studio Code extension that allows you to easily create “adomonition box” within your Markdown documents.
 
@@ -10,16 +7,7 @@ Using this extension, you can easily add [Qiita](https://qiita.com/) or [Zenn](h
 
 ![](./images/markdown-info.png)
 
-<!-- omit in toc -->
-## TOC
-- [Setup](#setup)
-- [Quick usage](#quick-usage)
-- [Usage](#usage)
-- [Features](#features)
-- [Configuration](#configuration)
-- [Credits](#credits)
-- [Used Plugins](#used-plugins)
-- [Acknowledgments](#acknowledgments)
+
 
 ## Setup
 Enter “**Markdown Info**” in the VScode marketplace.
@@ -29,10 +17,10 @@ Enter “**Markdown Info**” in the VScode marketplace.
 </p>
 
 ## Quick usage
-| Format | Markdown | 
-| ------------- | ---------------------------- | 
+| Format | Markdown |
+| ------------- | ---------------------------- |
 | Qiita Format | `:::note Type Title` |
-| Zenn Format | `::message Type Title` | 
+| Zenn Format | `::message Type Title` |
 
 Qiita Format:
 
@@ -84,7 +72,7 @@ The default value is “**Please write the title here**”.
 ![](./images/default-title.png)
 
 ### Preview Styles
-You can select the CSS stylesheet that will be reflected in the Markdown preview screen. 
+You can select the CSS stylesheet that will be reflected in the Markdown preview screen.
 
 The available options are as follows:
 

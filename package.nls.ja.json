@@ -1,5 +1,7 @@
 {
-    "markdown-info.previewStyles": "スタイルシートを選択してください。利用可能なオプションは以下の通りです:\n\n・ default:\tデフォルトのスタイルシートを使用します。\n・ qiita:\tQiita風のスタイルシートを適用します。\n・ zenn:\tZenn風のスタイルシートを適用します。",
-    "markdown-info.defaultTitle": "ボックスのデフォルトタイトルを設定します。タイトルが指定されていない場合に使用されます。",
-    "markdown-info.defaultTitle.default": "ここにタイトルを記述してください"
+    "markdown-info.previewStyles": "ボックスのスタイルを選択します:\n\n・ bordered: 枠線で強調し、本文の背景を透明にします。\n・ solid: 濃い背景色で強調します。\n・ pastel: 淡い背景色でやさしく強調します。",
+    "markdown-info.defaultTitle": "ボックスのデフォルトタイトルを設定します。未設定の場合、タイトルを指定していないボックスではタイトルを省略します。",
+    "markdown-info.classes": "すべてのボックスへHTML classを追加します。",
+    "markdown-info.attributes": "すべてのボックスへHTML属性を追加します。class属性は無視されるため、代わりにClassesを使用してください。",
+    "markdown-info.embedCss": "生成するHTMLへボックスのスタイルとアイコンを直接埋め込みます。Markdown Clipなどの別の拡張機能を利用してMarkdownをHTMLへ変換し、変換後のHTMLにもボックスの見た目を引き継ぎたい場合に使用します。"
 }

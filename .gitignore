@@ -1,7 +1,8 @@
 テスト/
 .vscode-test/
-test-RunExtension/*
-!/test-RunExtension/.gitkeep
+test-extension/*
+!/test-extension/.gitkeep
+test-workspace
 
 # OS
 .DS_Store

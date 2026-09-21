@@ -42,6 +42,15 @@ releaseブランチでリリース作業を行う場合は、公開前に `packa
 
 `displayName` または `name` の変更が必要な場合は、通常のバージョン更新として扱わず、公開への影響を確認してからユーザーへ方針を提示する。
 
+### GitHub Actionsの公開CLI
+
+リリースタグを作成する前に、`.github/workflows/`の公開workflowが使用するCLIを確認する。
+
+* `npx --no-install`で実行するCLIは、対応するパッケージを`devDependencies`へ追加し、`package-lock.json`へ記録する
+* `vsce`コマンドには`@vscode/vsce`、`ovsx`コマンドには`ovsx`を使用する
+* グローバルインストールやnpmキャッシュに依存せず、クリーンな`npm ci`のあとにworkflow内のコマンドが実行できることを確認する
+* VSIX生成だけでなく、MarketplaceとOpen VSXの公開工程で使用するCLIも漏れなく確認する
+
 ### `release-1.0.0` 削除前の確認
 
 `release-1.0.0` ブランチを削除する前に、GitHub ActionsからMarketplaceへ公開するために必要なPATがGitHubへ登録されていることを確認する。

@@ -2,7 +2,7 @@
     "Create Admonition Box (Qiita-style)": {
         "prefix": ":::note",
         "body": [
-			":::note ${1|info,warn,alert,question|} ${2:Enter the title here}",
+			":::note ${1|info,warn,alert,question|}",
 			"",
 			":::"
 		],
@@ -13,7 +13,7 @@
     "Create Admonition Box (Zenn-style)": {
         "prefix": ":::message",
         "body": [
-			":::message ${1|info,warn,alert,question|} ${2:Enter the title here}",
+			":::message ${1|info,warn,alert,question|}",
 			"",
 			":::"
 		],

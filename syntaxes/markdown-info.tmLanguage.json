@@ -1,0 +1,59 @@
+{
+  "name": "Markdown Info",
+  "scopeName": "markdown-info.injection",
+  "injectionSelector": "L:text.html.markdown -markup.fenced_code.block.markdown -markup.inline.raw.string.markdown, L:source.markdown -markup.fenced_code.block.markdown -markup.inline.raw.string.markdown",
+  "patterns": [
+    {
+      "name": "markdown-info.info.markdown",
+      "begin": "^[ \\t]{0,3}:{3,}(?:note|message)[ \\t]+info(?=[ \\t{]|$)",
+      "end": "^[ \\t]{0,3}:{3,}[ \\t]*$",
+      "patterns": [
+        {
+          "include": "$self"
+        },
+        {
+          "include": "$base"
+        }
+      ]
+    },
+    {
+      "name": "markdown-info.warn.markdown",
+      "begin": "^[ \\t]{0,3}:{3,}(?:note|message)[ \\t]+warn(?:ing)?(?=[ \\t{]|$)",
+      "end": "^[ \\t]{0,3}:{3,}[ \\t]*$",
+      "patterns": [
+        {
+          "include": "$self"
+        },
+        {
+          "include": "$base"
+        }
+      ]
+    },
+    {
+      "name": "markdown-info.alert.markdown",
+      "begin": "^[ \\t]{0,3}:{3,}(?:note|message)[ \\t]+alert(?=[ \\t{]|$)",
+      "end": "^[ \\t]{0,3}:{3,}[ \\t]*$",
+      "patterns": [
+        {
+          "include": "$self"
+        },
+        {
+          "include": "$base"
+        }
+      ]
+    },
+    {
+      "name": "markdown-info.question.markdown",
+      "begin": "^[ \\t]{0,3}:{3,}(?:note|message)[ \\t]+question(?=[ \\t{]|$)",
+      "end": "^[ \\t]{0,3}:{3,}[ \\t]*$",
+      "patterns": [
+        {
+          "include": "$self"
+        },
+        {
+          "include": "$base"
+        }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,10 @@ const {GetConfig} = require("../configs/getConfig");
 
 exports.plugins = [
     $('markdown-it-info',{
-        admonitionStyle: GetConfig.get("previewStyles"),
+        style: GetConfig.get("previewStyles"),
+        classes: GetConfig.get("classes"),
+        attributes: GetConfig.get("attributes"),
+        embedCss: GetConfig.get("embedCss"),
         defaultType: "info",
         defaultTitle: GetConfig.get("defaultTitle")
     })

@@ -1,5 +1,7 @@
 {
-    "markdown-info.previewStyles": "Select a stylesheet. Available options are as follows:\n\n• default: Uses the default stylesheet.\n• qiita: Applies a Qiita-like stylesheet.\n• zenn: Applies a Zenn-like stylesheet.",
-    "markdown-info.defaultTitle": "Sets the default title for boxes. This will be used when no title is specified.",
-    "markdown-info.defaultTitle.default": "Enter the title here"
+    "markdown-info.previewStyles": "Select the box style:\n\n• bordered: Uses a border with a transparent content background.\n• solid: Uses a strong filled background.\n• pastel: Uses a soft filled background.",
+    "markdown-info.defaultTitle": "Sets the default title for boxes. When unset, boxes without a title have no title.",
+    "markdown-info.classes": "Adds HTML classes to every box.",
+    "markdown-info.attributes": "Adds HTML attributes to every box. The class attribute is ignored; use Classes instead.",
+    "markdown-info.embedCss": "Embeds the box styles and icon directly in the generated HTML. Use this when converting Markdown to HTML with another extension, such as Markdown Clip, so the box appearance can be carried into the converted HTML."
 }
